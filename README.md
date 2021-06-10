@@ -6,17 +6,26 @@ The link to the website deployed using Heroku can be found at: https://damp-shel
 
 ## Implemented Features: 
 ● Use the xkcd API (see https://xkcd.com/json.html)
+
 ● Hosted on Heroku
+
 ● Display 1 comic strip per page
+
 ● Buttons to navigate to the previous and next comic strip
+
 ● Display the date of when the comic strip was created
+
 ● Ability to navigate to a specific comic strip by including a comic # in the URL
+
 ● Parse transcript from API into a more readable format & display on the page -> also add a guide for different color and font.
+
 ● Done in Node.js with Express.
+
 ● Style accordingly with CSS (Didn't use bootstrap etc. but did use my own css)
+
 ● A random button that goes to a random comic strip
-● Each comic page has a counter that displays the amount of times this specific comic strip has been
-viewed on the site.
+
+● Each comic page has a counter that displays the amount of times this specific comic strip has been viewed on the site.
 
 ## Possible Improvement / Problem
 1. Add regex to prevent user input a route with id outside of range. (Based on test, the API only offer #1 - 2474)
