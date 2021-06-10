@@ -3,7 +3,7 @@
 const log = console.log
 
 // const express = require('express')
-// const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 // const app = express();
 // const uri = process.env.MONGODB_URI;
@@ -45,6 +45,6 @@ app.get(`/:id`, function (req, res){
 //     res.sendFile(path.join(__dirname + '/pub/Display.html'));
 // });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('server is listening on port 3000');
 });
