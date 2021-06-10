@@ -1,5 +1,5 @@
 # xkcd-case-website by Minyi Ma
-This is the technical case study assigned by Stratus360. Sorry for submitting at the last hour and some orgnizing or imperfect part of this project, which caused by I was really busy this week. But I tried to implement all the required feature (including bonus) and thought about the potential improvement I can do in the future.
+This is the technical case study assigned by Stratus360. Due to personal circumstances I was not able to commmit the too much time in the project, so sorry for submitting at the last hour and some orgnizing issue or imperfect part of this project. But I've implemented all the required features (including bonus) and write down my thoughts about the potential improvement I can make in the future.
 
 ## Deployed Website: 
 The link to the website deployed using Heroku can be found at: https://damp-shelf-27004.herokuapp.com. Here my assumption is it will start by a welcoming page, then by clicking random or input comic strips to the URL, the user will be redirect to corresponding comic strips page.
