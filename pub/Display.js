@@ -5,7 +5,7 @@ function getComicID() {
 	const url_array = full_url.split('/') // Split the string into an array with / as separator
 	const last_segment = url_array[url_array.length-1];  // Get the last part of the array (-1)
 	// alert( last_segment ); // Alert last segment
-	console.log(full_url)
+	// console.log(full_url)
 	return last_segment
 }
 
@@ -20,7 +20,7 @@ async function getData() {
 	const transcript_block = document.getElementById('transcript');
 	transcript_block.innerText = data.transcript
 	document.getElementById('title').innerText = data.safe_title;
-	document.getElementById('date').innerText = "Date Created:" + data.year + "-" + data.month + "-" + data.day
+	document.getElementById('date').innerText = "Date Created: " + data.year + "-" + data.month + "-" + data.day
 	// display_block.innerHTML = `<img src="${data.img}">`
 
 }
@@ -59,3 +59,26 @@ function goNext() {
 function goRandom() {
 	location.href = getNewURL(0);
 }
+
+
+async function displayIDViewTime() {
+	const url = `/times`
+	const request = new Request(url, {
+		method: 'get',
+		headers: {
+			'Accept': 'application/json, text/plain, */*',
+			'Content-Type': 'application/json'
+		},
+	})
+	const res = await fetch(request)
+	const json = await res.json()
+
+	return json.counter
+}
+
+displayIDViewTime().then(r => {
+	const comicID = parseInt(getComicID());
+	// console.log(r)
+	// console.log(r[comicID])
+	document.getElementById("viewTime").innerText = "This comic Strip is viewed: "+ r[comicID] + " times"
+} )

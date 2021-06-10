@@ -16,6 +16,7 @@ const port = process.env.PORT || 3000
 const express = require('express');
 const path = require('path')
 
+let counter = Array(2475).fill(0)
 
 const app = express();
 // Middleware to solve the CORS issue
@@ -34,11 +35,16 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get(`/:id`, function (req, res){
+app.get(`/:id(\\d+)`, function (req, res){
     // res.send('id: ' + req.params.id);
-    console.log(req.params.id)
+    // console.log(req.params.id)
     // res.send(req.params);
+    counter[req.params.id]++;
     res.sendFile(path.join(__dirname + '/pub/Display.html'));
+});
+
+app.get(`/times`, function (req, res){
+    res.send({counter});
 });
 
 // app.get('/display', (req, res) => {
@@ -48,3 +54,4 @@ app.get(`/:id`, function (req, res){
 app.listen(port, () => {
     console.log('server is listening on port 3000');
 });
+
