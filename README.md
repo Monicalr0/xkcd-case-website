@@ -1,4 +1,4 @@
-# xkcd-case-website
+# xkcd-case-website by Minyi Ma
 This is the technical case study assigned by Stratus360. Sorry for submitting at the last hour and some orgnizing or imperfect part of this project, which caused by I was really busy this week. But I tried to implement all the required feature (including bonus) and thought about the potential improvement I can do in the future.
 
 ## Deployed Website: 
@@ -33,4 +33,4 @@ The link to the website deployed using Heroku can be found at: https://damp-shel
 3. The code is not organized enough and lack of comment. 
 4. The way I parsed transcript is quite brute force, maybe some less complex approach can be taken. 
 
-Thank you for spending time reading this!
+# Thank you for spending time reading this!
