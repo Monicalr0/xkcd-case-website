@@ -32,5 +32,6 @@ The link to the website deployed using Heroku can be found at: https://damp-shel
 2. The transcript block should be set to hide if there is no transcript, to show that is not a bug I keep it there and leave alternative text.
 3. The code is not organized enough and lack of comment. 
 4. The way I parsed transcript is quite brute force, maybe some less complex approach can be taken. 
+5. The heroku is deployed using master branch, in real world it might be better to use a separate test branch for testing. 
 
 # Thank you for spending time reading this!
