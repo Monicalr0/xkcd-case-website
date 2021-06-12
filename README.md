@@ -37,5 +37,6 @@ The link to the website deployed using Heroku can be found at: https://damp-shel
 4. The way I parsed transcript is quite brute force, maybe some less complex approach can be taken. 
 5. The heroku is deployed using master branch, in real world it might be better to use a separate test branch for testing. 
 6. The guide for transcript is classified based on different symbol ("{{", "<<","((" etc.), I give the explanation based on one comics but found that they are not always corresponding to same thing. So this may be not accurate enough.
+7. The Screen view is not quite fit on phone
 
 # Thank you for spending time reading this!
