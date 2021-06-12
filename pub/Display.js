@@ -9,9 +9,16 @@ function getComicID() {
 
 async function getData() {
 	const comicID = getComicID();
-	const api_general_url = 'https://xkcd.com/' + comicID + '/info.0.json'
-	const response = await fetch(api_general_url);
-	const data = await response.json();
+	const api_general_url = `/getData/` + comicID
+	const request = new Request(api_general_url, {
+		method: 'get',
+		headers: {
+			'Accept': 'application/json, text/plain, */*',
+			'Content-Type': 'application/json'
+		},
+	})
+	const res = await fetch(request)
+	const data = await res.json()
 
 	const displayImg = document.getElementById('comic strip');
 	displayImg.src = data.img
